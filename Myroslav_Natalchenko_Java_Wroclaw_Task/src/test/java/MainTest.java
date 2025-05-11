@@ -4,7 +4,7 @@ import java.util.*;
 
 import org.example.data.*;
 
-import static org.example.Main.decidePointsToUse;
+import static org.example.OrderAnalyzer.decidePointsToUse;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class MainTest {
@@ -40,7 +40,7 @@ public class MainTest {
 
         double pointsUsed = decidePointsToUse(points, currentOrder.value, List.of(futureOrder), paymentMethods);
 
-        assertEquals(10.0, pointsUsed, 0.01, "Should only use 10% points to preserve for future use");
+        assertEquals(10, pointsUsed);
     }
 
     @Test
@@ -63,6 +63,6 @@ public class MainTest {
 
         double used = decidePointsToUse(points, 100.0, new ArrayList<>(), methods);
 
-        assertEquals(50.0, used, 0.01);
+        assertEquals(50.0, used);
     }
 }

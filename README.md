@@ -1,3 +1,16 @@
+## Project Structure
+
+```
+/org.example
+│
+├─ Main.java               # Entry point of the application
+├─ OrderAnalyzer.java      # Logic for selecting optimal payment methods
+│
+├─ data/
+│   ├─ Order.java          # Order Class
+│   └─ PaymentMethod.java  # Payment Method Class
+```
+
 # Payment Strategy
 
 1. **If a product can be fully paid using bonus points (PUNKTY),** then this transaction is executed — even if the product has PROMOTIONS and one of the promotional payment methods can also fully cover the cost — because the reward for full payment with PUNKTY is higher.
