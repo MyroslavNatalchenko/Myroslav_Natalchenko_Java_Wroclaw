@@ -20,7 +20,7 @@ public class Main {
 
         Map<String, Double> totalSpent = OrderAnalyzer.total_spent_per_method(orders_json, paymentMethods_json);
 
-        for (var entry : totalSpent.entrySet()) {
+        for (var entry: totalSpent.entrySet()) {
             if (entry.getValue() > 0)
                 System.out.printf("%s %.2f%n", entry.getKey(), entry.getValue());
         }

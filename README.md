@@ -3,7 +3,7 @@
 ```
 /org.example
 │
-├─ Main.java               # Entry point of the application
+├─ Main.java               # Main
 ├─ OrderAnalyzer.java      # Logic for selecting optimal payment methods
 │
 ├─ data/
